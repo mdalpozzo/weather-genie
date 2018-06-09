@@ -1,0 +1,42 @@
+Arguments: 
+  /home/mdalpozzo/.nvm/versions/node/v8.11.2/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/mdalpozzo/.nvm/versions/node/v8.11.2/bin:/home/mdalpozzo/bin:/home/mdalpozzo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Microsoft DNX/Dnvm:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files/Git/cmd:/mnt/c/Android:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/nodejs:/mnt/c/Users/marli/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/marli/AppData/Local/atom/bin:/mnt/c/Users/marli/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/marli/AppData/Roaming/npm:/snap/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, scandir '/mnt/c/users/marli/desktop/code/practice1/node_modules/npm/node_modules/libnpx/node_modules/yargs/node_modules'
+
+npm manifest: 
+  {
+    "name": "practice1",
+    "version": "1.0.0",
+    "description": "test",
+    "main": "practice.js",
+    "dependencies": {
+      "express": "^4.16.3",
+      "npm": "^6.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node practice.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
