@@ -1,0 +1,23 @@
+.day {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.day img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.days-of-week {
+  display: flex;
+  border: 1px solid black;
+  height: 150px;
+}
