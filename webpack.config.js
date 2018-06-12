@@ -1,14 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const outputDir = "src/client/dist";
+const outputDir = 'public/dist';
 
 module.exports = {
-  entry: "./src/client/components/index.jsx",
+  entry: './src/client/components/index.jsx',
   output: {
     path: path.join(__dirname, outputDir),
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -16,20 +16,21 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
-        test: /\css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   },
   devServer: {
     port: 3000,
     open: true,
+    private: true,
     proxy: {
-      "/api": "http://localhost:1337"
+      '/api': 'http://localhost:1337'
     }
   },
   plugins: [
@@ -39,4 +40,4 @@ module.exports = {
     //     favicon: "./public/favicon.ico"
     // })
   ]
-}
+};

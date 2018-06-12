@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-require('dotenv').config()
+require('dotenv').config();
 
 // const { API_KEY } = process.env;
 
@@ -12,7 +12,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, '/../client/')));
+app.use(express.static(path.join(__dirname, '/../../public/')));
 
 app.get('/forecast', (req, res) => {
   axios.get(`http://api.openweathermap.org/data/2.5/forecast?id=5391997&APPID=${API_KEY}`)
